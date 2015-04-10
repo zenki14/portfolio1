@@ -1,0 +1,14 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "underscore": "~1.6.0",
+    "bourbon": "~4.0.2",
+    "neat": "~1.6.0",
+    "normalize-css": "~3.0.1",
+    "foundation": "zurb/bower-foundation#~5.5.1",
+    "materialize": "~0.96.1",
+    "font-awesome": "~4.3.0"
+  }
+}
