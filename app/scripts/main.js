@@ -1,16 +1,26 @@
-$( document ).ready(function(){
-  $(".button-collapse").sideNav();
-  $('.collapsible').collapsible({
-        accordion : false
-      });
-});
+(function() {
+  "use strict"
 
-var options = [
-   {selector: '.class', offset: 200, callback: 'globalFunction()' },
-   {selector: '.collapsible', offset: 200, callback: 'globalFunction()' },
-   // {selector: '#staggered-test', offset: 50, callback: 'Materialize.toast("This is our ScrollFire Demo!", 1500 )' },
-   // {selector: '#staggered-test', offset: 205, callback: 'Materialize.toast("Please continue scrolling!", 1500 )' },
-   // {selector: '#staggered-test', offset: 400, callback: 'Materialize.showStaggeredList("#staggered-test")' },
-   // {selector: '#image-test', offset: 500, callback: 'Materialize.fadeInImage("#image-test")' }
- ];
- Materialize.scrollFire(options);
+  //background color
+  $(window).scroll(function () {
+    var scroll = $(document).scrollTop();
+    if ( scroll > 517 ) {
+      $('header').css({"background": "#394053"});
+    } else {
+      $('header').css({"background": "none"});
+    }
+  });
+
+  // menu button
+  var menuButton = document.getElementById('menuButton');
+  menuButton.addEventListener('click', function (e) {
+      e.preventDefault();
+      menuButton.classList.toggle('is-active');
+      if ($(".menu-button").hasClass("is-active") === true) {
+        $('nav').show();
+      } else {
+        $('nav').hide();
+      }
+  });
+
+}());

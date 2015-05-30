@@ -3,184 +3,126 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <title>Portfolio</title>
-
-
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
+    <title>Dane Worsham</title>
     <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
-    <link rel="stylesheet" href="../bower_components/materialize/dist/css/materialize.css" />
     <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css" />
-
-    <!-- endbower -->
-    <!-- endbuild -->
-
-    <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
   </head>
   <body>
     <header>
+      <div class="logo">
+        <a href="#">Dane Worsham</a>
+      </div>
+      <a href="#" class="menu-button" id="menuButton">
+          <span class="burger-icon"></span>
+      </a>
       <nav>
-        <div class="nav-wrapper">
-          <a href="#!" class="brand-logo">DW</a>
-          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html">About</a></li>
-            <li><a href="components.html">Projects</a></li>
-            <li><a href="javascript.html">Skills</a></li>
-            <li><a href="mobile.html">Contact</a></li>
-          </ul>
-          <ul class="side-nav" id="mobile-demo">
-            <li><a href="sass.html">About</a></li>
-            <li><a href="components.html">Projects</a></li>
-            <li><a href="javascript.html">Skills</a></li>
-            <li><a href="mobile.html">Contact</a></li>
-          </ul>
-        </div>
+        <ul id="nav">
+          <li><a href="#contact" class="goto">Contact</a></li>
+          <li><a href="#crew" class="goto">Experience</a></li>
+          <li><a href="#clients_section" class="goto">Skills</a></li>
+          <li><a href="#works" class="goto">Work</a></li>
+          <li><a href="#about" class="goto selected">About</a></li>
+        </ul>
       </nav>
-
     </header>
 
-    <div id="container" class="container">
-      <section id="about" class="center-align row col s12">
-        <h3>About</h3>
-        <p class="statement">Dane is a front-end developer.</p>
-        <div class="social-bar flow-text">
-          <a href="https://github.com/zenki14" class="social-links col s4">
-            <i class="fa fa-github large"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/dworsham" class="social-links col s4">
-            <i class="fa fa-linkedin-square large"></i>
-          </a>
-          <a href="https://soundcloud.com/revo909" class="social-links col s4">
-            <i class="fa fa-soundcloud large"></i>
-          </a>
-        </div>
-      </section>
-      <hr>
-      <section id="works">
-        <div class="main col s12 center-align">
-          <h3>Projects</h3>
-          <ul class="collapsible popout flow-text" data-collapsible="accordion">
-              <li>
-                <div class="collapsible-header"><i class="fa fa-road"></i>The Scenic Route</div>
-                <div class="collapsible-body"><p>A social mapping application designed to bring drivers together by simplifying the way scenic route information is shared.</p></div>
-              </li>
-              <li>
-                <div class="collapsible-header"><i class="fa fa-desktop"></i>Surf and Paddle</div>
-                <div class="collapsible-body"><p>A pixel perfect web site based on a render for a small business.</p></div>
-              </li>
-              <li>
-                <div class="collapsible-header"><i class="fa fa-music"></i>Plangular Playlist App</div>
-                <div class="collapsible-body"><p>An application that uses the Plangular Directive that pulls data from the SoundCloud API and allows for users to simply view and listen to playlists.</p></div>
-              </li>
-            </ul>
-        </div>
-      </section>
-      <hr>
-      <section id="skills">
-        <div class="row center-align">
-          <div class="col s12">
-            <h3>Skills</h3>
-            <div class="skills-section">
-             <p class="skills">
-               <span class="skills-title">HTML/CSS: </span>
-               SASS/LESS, Bourbon/Neat, Bootstrap, Foundation, Materialize
-             </p>
-             <p class="skills">
-               <span class="skills-title">JavaScript: </span>
-               Backbone, jQuery, Underscore, Angular (along with a handful of directives)
-             </p>
-             <p class="skills">
-               <span class="skills-title">Exposure: </span>
-               Ruby on Rails, PARSE, FireBase
-             </p>
-             <p class="skills">
-               <span class="skills-title">Future Learning: </span>
-               Meteor, D3, React, CoffeeScript, TypeScript, ES6, Jade, and many more
-             </p>
-            </div>
-
-          </div>
-        </div>
-      </section>
-      <hr>
-      <section id="exp">
-
-      </section>
-      <hr>
-      <section id="contact">
-        <div class="center-align valign-wrapper">
-
-          <div class="col s4 view view-tenth valign">
-            <i class="fa fa-envelope-square large"></i>
-            <div class="mask">
-              <h2>Email</h2>
-              <p>Send Dane an email @ <a href="mailto:zenki14@gmail.com">zenki14@gmail.com</a>.</p>
-            </div>
-          </div>
-          <div class="col s4 view view-tenth valign">
-            <i class="fa fa-phone-square large"></i>
-            <div class="mask">
-              <h2>Phone</h2>
-              <p>Call Dane @ 352.804.2650.</p>
-            </div>
-          </div>
-          <div class="col s4 view view-tenth valign">
-            <i class="fa fa-rss-square large"></i>
-            <div class="mask">
-              <h2>Blog</h2>
-              <p>Revised Blog is coming soon.</p>
-            </div>
-          </div>
-
-        </div>
-      </section>
+    <div class="banner">
+      <h1>Will Work For Food.</h1>
     </div>
 
-    <div></div>
+    <main>
+      <section id="about">
+        <h4>Hi, I'm Dane</h4>
+        <p>I'm a man of many skills, but my focus now is to become a great frontend web developer. I just graduated from the Iron Yard and I'm looking for a great opportunity to grow and make great things.</p>
+        <div class="socialbar">
+          <a href="http://www.linkedin.com/in/jonathangdickerson" class="sociallinks" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="https://github.com/zenki14" class="sociallinks" target="_blank"><i class="fa fa-github"></i></a>
+          <a href="https://soundcloud.com/revo909" class="sociallinks" target="_blank"><i class="fa fa-soundcloud"></i></a>
+        </div>
+        <div class="tiles">
+          <div class="four columns whatwedo animateme" data-when="enter" data-from="0.5" data-to="0" data-opacity="0" data-translatex="-200" data-rotatez="0">
+            <!-- <img src="img/ico1.png" alt="ico1"> -->
+            <i class="fa fa-envelope"></i>
+            <h4>Email</h4>
+            <p>Email me at<br><a href="mailto:jgd@driiven.com">zenki14@gmail.com</a></p>
+          </div>
 
+          <div class="four columns whatwedo animateme" data-when="enter" data-from="0.5" data-to="0" data-opacity="0" data-translatex="-200" data-rotatez="0">
+            <!-- <img src="img/ico3.png" alt="ico3"> -->
+            <i class="fa fa-phone-square"></i>
+            <h4>Phone</h4>
+            <p>Call:<br><a href="tel://1-352-804-2650">352.804.2650</a></p>
+          </div>
+        </div>
+      </div>
+      </section>
 
+      <section id="work">
+        <div class="work">
+          <h2>Work 1</h2>
+          <p>Descriptions of work one and stuff!</p>
+        </div>
+        <div class="work">
+          <h2>Work 1</h2>
+          <p>Descriptions of work one and stuff!</p>
+        </div>
+        <div class="work">
+          <h2>Work 1</h2>
+          <p>Descriptions of work one and stuff!</p>
+        </div>
+      </section>
 
+      <section id="skills">
+        <h3>Skills</h3>
+        <p>HTML/CSS:  Preprocessor tools - SASS/Compass, Bourbon/Neat. CSS/HTML Frameworks - Twitter Bootstrap,
+    Foundation, HTML5 Boilerplate.</p>
+        <p>Javascript Libraries: Angular, jQuery, Underscore.js, able to learn other MVC frameworks (React or
+    Knockout), exposure to Coffeescript and Typescript.</p>
+        <p>UX/UI: Have a good eye for design. Familar with responsive Web Design - media queries, fully functional layouts across all screen sizes.</p>
+        <ul class="four_up tiles clients_list animateme" data-when="exit" data-from="0.2" data-to="0" data-opacity="0" data-translatex="-50" data-rotatez="0" style="opacity: 1; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);">
+          <li class="clients"><p class="skills"><span class="skillstitle">Development tools:</span> Gulp, Yeoman, Bower</p></li>
+          <li class="clients"><p class="skills"><span class="skillstitle">Restful APIs:</span> Interacting with external API's via AJAX</p></li>
+          <li class="clients"><p class="skills"><span class="skillstitle">Parse:</span> Javascript SDK and Cloud Code</p></li>
+          <li class="clients"><p class="skills"><span class="skillstitle">Testing tools:</span> Jasmine, Mocha, Chai assertion library, QUnit</p></li>
+        </ul>
+        <ul class="four_up tiles animateme" data-when="exit" data-from="0.2" data-to="0" data-opacity="0" data-translatex="50" data-rotatez="0" style="opacity: 1; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);">
+          <li class="clients"></li>
+          <li class="clients"><p class="skills"><span class="skillstitle">Node.JS basics:</span> Heroku deployment, Node Package Manager</p></li>
+          <li class="clients"><p class="skills"><span class="skillstitle">Versioning/Collaborating:</span> Git, Github - experince working on teams</p></li>
+          <li class="clients"></li>
+        </ul>
+      </section>
 
+      <section id="experience">
+        <h3>Experience</h3>
+        <a href="">Download resume here</a>
+        <div class="shipping">
+          Shipping
+        </div>
+        <div class="property">
+          Property Manager
+        </div>
+        <div class="djing">
+          DJ
+        </div>
+        <div class="iron-yard">
+          Iron Yard
+        </div>
+      </section>
 
-    <footer class="page-footer">
-           <div class="container">
-             <div class="row">
-               <div class="col l6 s12">
-                 <h5 class="white-text">Footer Content</h5>
-                 <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-               </div>
-               <div class="col l4 offset-l2 s12">
-                 <h5 class="white-text">Links</h5>
-                 <ul>
-                   <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                   <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                   <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                   <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                 </ul>
-               </div>
-             </div>
-           </div>
-           <div class="footer-copyright">
-             <div class="container">
-             © 2015 Dane Worsham
-             </div>
-           </div>
-         </footer>
+    </main>
 
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
+    <footer>
+      <p>© 2015 Dane Worsham</p>
+      <div class="footer-social">
+        <a href="http://www.linkedin.com/in/jonathangdickerson" class="sociallinks" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/zenki14" class="sociallinks" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://soundcloud.com/revo909" class="sociallinks" target="_blank"><i class="fa fa-soundcloud"></i></a>
+      </div>
+    </footer>
+
     <script src="../bower_components/jquery/dist/jquery.js"></script>
-    <script src="../bower_components/underscore/underscore.js"></script>
-    <script src="../bower_components/materialize/dist/js/materialize.js"></script>
-    <script src="../bower_components/materialize/dist/js/materialize.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-
-        <!-- build:js scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+    <script src="scripts/main.js"></script>
 </body>
 </html>

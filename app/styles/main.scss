@@ -2,136 +2,148 @@
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
+// Burger
+@import '../../bower_components/sass-burger/_burger.scss';
+
+// Font
+@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,300,400italic);
+$font: 'Merriweather Sans', sans-serif;
+
+// Variables
+
+$black: #000;
+$white: #fff;
+$gray: #333;
+
+
+$primary: #394053;
+$secondary: #4E4A59;
+$tertiary: #6E6362;
+$quaternary: #839073;
+
 // Custom Styles
 body {
-  background: #fafafa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-
+  color: $gray;
+  font-family: $font;
+  font-weight: 300;
 }
 
-.collapsable {
-
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
-.view {
-  width: 300px;
-  height: 200px;
-  margin: 10px;
-  float: left;
-  border: 10px solid #fafafa;
-  overflow: hidden;
-  position: relative;
+h1 {
+  color: $white;
+  font-size: 50px;
+  margin: 0;
+  padding: 235px 0 0;
   text-align: center;
-  // box-shadow: 1px 1px 2px #e6e6e6;
-  cursor: default;
-  background: #fafafa;
+  text-shadow: 2px 2px #000;
 }
 
-.view .mask, .view .content{
-  width: 300px;
-  height: 200px;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
+a {
+  color: $tertiary;
+  text-decoration: none;
+  &:hover {
+    color: $quaternary;
+  }
+}
+
+header {
+  background: $primary;
   left: 0;
+  padding: 25px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: background-color 0.5s ease;
 }
 
-.view i{
-  display: block;
-  position: relative;
+.logo {
+  float: left;
+  a {
+    color: $white;
+    font-size: 26px;
+    font-weight: 600;
+    text-shadow: 2px 2px #000;
+  }
+}
+
+.menu-button {
+  display: none;
+  float: right;
+  padding: .5em;
+}
+
+.burger-icon {
+  @include burger(25px, 3px, 5px, #fff);
+}
+
+.menu-button.is-active .burger-icon {
+  @include burger-to-cross;
+}
+
+nav {
+  float: right;
+}
+
+ul#nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    float: right;
+    padding-left: 20px;
+    a {
+      color: $white;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 33px;
+      text-shadow: 2px 2px #000;
+    }
+  }
+}
+
+.banner {
+  background: url('../images/bg.jpg') top center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 600px;
+  width: 100%;
+}
+
+#about {
+  padding: 100px 0;
   text-align: center;
 }
 
-.view h2 {
-    text-transform: uppercase;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    font-size: 17px;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
-    margin: 20px 0 0 0
- }
-
- .view p {
-     font-family: Georgia, serif;
-     font-style: italic;
-     font-size: 12px;
-     position: relative;
-     color: #fff;
-     padding: 10px 20px 20px;
-     text-align: center
- }
- .view a.info {
-     display: inline-block;
-     text-decoration: none;
-     padding: 7px 14px;
-     background: #000;
-     color: #fff;
-     text-transform: uppercase;
-     box-shadow: 0 0 1px #000
- }
- .view a.info:hover {
-     box-shadow: 0 0 5px #000
- }
-
- .view-tenth i {
-  transform: scaleY(1);
-  transition: all 0.7s ease-in-out;
- }
- .view-tenth .mask {
-     // background-color: rgba(255, 231, 179, 0.3);
-     background-color: #fafafa;
-     transition: all 0.5s linear;
-     opacity: 0;
- }
- .view-tenth h2{
-     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-     background: transparent;
-     margin: 20px 40px 0px 40px;
-     transform: scale(0);
-     color: #333;
-     transition: all 0.5s linear;
-     opacity: 0;
- }
- .view-tenth p {
-     color: #333;
-     opacity: 0;
-     transform: scale(0);
-     transition: all 0.5s linear;
- }
- .view-tenth a.info {
-     opacity: 0;
-     transform: scale(0);
-     transition: all 0.5s linear;
- }
-
- .view-tenth:hover i {
-  transform: scale(10);
-     opacity: 0;
- }
- .view-tenth:hover .mask {
-  opacity: 1;
- }
- .view-tenth:hover h2,
- .view-tenth:hover p,
- .view-tenth:hover a.info{
-     transform: scale(1);
-     opacity: 1;
- }
-
-
-
-
-
-
-.main {
-  flex: 1 0 auto;
+@media only screen and (max-width : 1024px) {
+  header {
+    padding: 15px;
+  }
+  nav {
+    display: none;
+    padding-top: 20px;
+  }
+  #nav {
+    li {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .menu-button {
+    display: inline-block;
+  }
 }
+
+
+
+
+
+
+
 
 
 
