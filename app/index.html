@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css" />
     <link rel="stylesheet" href="styles/main.css">
   </head>
-  <body>
+  <body id="body">
     <header>
       <div class="logo">
         <a href="#">Dane Worsham</a>
@@ -18,11 +18,10 @@
       </a>
       <nav>
         <ul id="nav">
-          <li><a href="#contact" class="goto">Contact</a></li>
-          <li><a href="#crew" class="goto">Experience</a></li>
-          <li><a href="#clients_section" class="goto">Skills</a></li>
-          <li><a href="#works" class="goto">Work</a></li>
+          <li><a href="#skills" class="goto">Skills & Experience</a></li>
+          <li><a href="#work" class="goto">Work</a></li>
           <li><a href="#about" class="goto selected">About</a></li>
+          <li><a href="#body" class="goto selected">Home</a></li>
         </ul>
       </nav>
     </header>
@@ -36,7 +35,7 @@
         <h4>Hi, I'm Dane</h4>
         <p>I'm a man of many skills, but my focus now is to become a great frontend web developer. I just graduated from the Iron Yard and I'm looking for a great opportunity to grow and make great things.</p>
         <div class="socialbar">
-          <a href="http://www.linkedin.com/in/jonathangdickerson" class="sociallinks" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="https://www.linkedin.com/in/dworsham" class="sociallinks" target="_blank"><i class="fa fa-linkedin"></i></a>
           <a href="https://github.com/zenki14" class="sociallinks" target="_blank"><i class="fa fa-github"></i></a>
           <a href="https://soundcloud.com/revo909" class="sociallinks" target="_blank"><i class="fa fa-soundcloud"></i></a>
         </div>
@@ -45,52 +44,50 @@
             <!-- <img src="img/ico1.png" alt="ico1"> -->
             <i class="fa fa-envelope"></i>
             <h4>Email</h4>
-            <p>Email me at<br><a href="mailto:jgd@driiven.com">zenki14@gmail.com</a></p>
+            <p>Email me at<br><a href="mailto:zenki14@gmail.com">zenki14@gmail.com</a></p>
           </div>
 
-          <div class="four columns whatwedo animateme" data-when="enter" data-from="0.5" data-to="0" data-opacity="0" data-translatex="-200" data-rotatez="0">
-            <!-- <img src="img/ico3.png" alt="ico3"> -->
+         <!--  <div class="four columns whatwedo animateme" data-when="enter" data-from="0.5" data-to="0" data-opacity="0" data-translatex="-200" data-rotatez="0">
+            <img src="img/ico3.png" alt="ico3">
             <i class="fa fa-phone-square"></i>
             <h4>Phone</h4>
             <p>Call:<br><a href="tel://1-352-804-2650">352.804.2650</a></p>
-          </div>
+          </div> -->
         </div>
       </div>
       </section>
 
       <section id="work">
         <div class="work">
-          <h2>Work 1</h2>
-          <p>Descriptions of work one and stuff!</p>
+          <h2>Surf and Paddle Website</h2>
+          <p>This was an Iron Yard homework assignment where we had to do a pixel perfect website based on a PSD (Photoshop Document). This was made using HTML and CSS.</p>
         </div>
         <div class="work">
-          <h2>Work 1</h2>
-          <p>Descriptions of work one and stuff!</p>
+          <h2>Fan Tracker</h2>
+          <p>This app uses Google's Maps API and Twitter's Stream API to track tweets associated with a particular College Football team based on a few referencing key words. This allows people to see where these particular fans are tweeting about the game. This is my first in-depth Meteor app.</p>
         </div>
         <div class="work">
-          <h2>Work 1</h2>
-          <p>Descriptions of work one and stuff!</p>
+          <h2>The Scenic Route</h2>
+          <p>This is an app that allows users to create scenic driving routes using Google's mapping software and allows you to share the routes with other users. It was built with Angular.</p>
         </div>
       </section>
 
       <section id="skills">
         <h3>Skills</h3>
-        <p>HTML/CSS:  Preprocessor tools - SASS/Compass, Bourbon/Neat. CSS/HTML Frameworks - Twitter Bootstrap,
-    Foundation, HTML5 Boilerplate.</p>
-        <p>Javascript Libraries: Angular, jQuery, Underscore.js, able to learn other MVC frameworks (React or
-    Knockout), exposure to Coffeescript and Typescript.</p>
+        <p>HTML/CSS: SASS/LESS, Bourbon/Neat. CSS/HTML Frameworks: Twitter Bootstrap,
+    Foundation, Material Design and HTML5 Boilerplate.</p>
+        <p>Javascript Libraries: Meteor, Angular, jQuery, Underscore.js - interested in learning other MVC frameworks (React, Ember, Knockout etc), exposure to Coffeescript and Typescript.</p>
         <p>UX/UI: Have a good eye for design. Familar with responsive Web Design - media queries, fully functional layouts across all screen sizes.</p>
         <ul class="four_up tiles clients_list animateme" data-when="exit" data-from="0.2" data-to="0" data-opacity="0" data-translatex="-50" data-rotatez="0" style="opacity: 1; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);">
-          <li class="clients"><p class="skills"><span class="skillstitle">Development tools:</span> Gulp, Yeoman, Bower</p></li>
+          <li class="clients"><p class="skills"><span class="skillstitle">Development tools:</span> Gulp, Yeoman, Bower, NPM, Iron for Meteor.js</p></li>
           <li class="clients"><p class="skills"><span class="skillstitle">Restful APIs:</span> Interacting with external API's via AJAX</p></li>
-          <li class="clients"><p class="skills"><span class="skillstitle">Parse:</span> Javascript SDK and Cloud Code</p></li>
-          <li class="clients"><p class="skills"><span class="skillstitle">Testing tools:</span> Jasmine, Mocha, Chai assertion library, QUnit</p></li>
+          <li class="clients"><p class="skills"><span class="skillstitle">Parse and Firebase:</span> Javascript SDK</p></li>
+          <li class="clients"><p class="skills"><span class="skillstitle">Testing tools:</span> Jasmine, Mocha, Chai</p></li>
+          
         </ul>
         <ul class="four_up tiles animateme" data-when="exit" data-from="0.2" data-to="0" data-opacity="0" data-translatex="50" data-rotatez="0" style="opacity: 1; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);">
-          <li class="clients"></li>
-          <li class="clients"><p class="skills"><span class="skillstitle">Node.JS basics:</span> Heroku deployment, Node Package Manager</p></li>
+          <li class="clients"><p class="skills"><span class="skillstitle">Node.JS basics:</span> Heroku deployment, DivShot deployment and Node Package Manager</p></li>
           <li class="clients"><p class="skills"><span class="skillstitle">Versioning/Collaborating:</span> Git, Github - experince working on teams</p></li>
-          <li class="clients"></li>
         </ul>
       </section>
 
@@ -98,16 +95,16 @@
         <h3>Experience</h3>
         <a href="">Download resume here</a>
         <div class="shipping">
-          Shipping
+          Shipping - I worked for a large American Muscle Car restoration parts warehouse. It was a full time shipping job that I had for just over a year before deciding to change careers and devote myself to something new.
         </div>
         <div class="property">
-          Property Manager
+          Property Manager - I managed properties the my family owned and rented out. I was responsible for the landscape maintenance and repairing anything that required it (paint, appliance repair and installation, screen work, etc.).
         </div>
         <div class="djing">
-          DJ
+          DJ - I worked as a DJ for many years. It's been one of the constants in my life. Music has a large impact on my work.
         </div>
         <div class="iron-yard">
-          Iron Yard
+          Iron Yard - Attended TIY's front end engineering course. 
         </div>
       </section>
 
@@ -116,7 +113,7 @@
     <footer>
       <p>© 2015 Dane Worsham</p>
       <div class="footer-social">
-        <a href="http://www.linkedin.com/in/jonathangdickerson" class="sociallinks" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/dworsham" class="sociallinks" target="_blank"><i class="fa fa-linkedin"></i></a>
         <a href="https://github.com/zenki14" class="sociallinks" target="_blank"><i class="fa fa-github"></i></a>
         <a href="https://soundcloud.com/revo909" class="sociallinks" target="_blank"><i class="fa fa-soundcloud"></i></a>
       </div>

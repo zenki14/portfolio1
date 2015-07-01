@@ -40,6 +40,11 @@ h1 {
   padding: 235px 0 0;
   text-align: center;
   text-shadow: 2px 2px #000;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 a {
@@ -50,14 +55,20 @@ a {
   }
 }
 
+i.fa {
+  font-size: 28px;
+  padding: 0 0.5rem;
+}
+
 header {
-  background: $primary;
+  background: none;
   left: 0;
   padding: 25px;
   position: fixed;
   top: 0;
   width: 100%;
   transition: background-color 0.5s ease;
+  z-index: 100;
 }
 
 .logo {
@@ -116,6 +127,47 @@ ul#nav {
 #about {
   padding: 100px 0;
   text-align: center;
+  p {
+    padding: 0 20%;
+  }
+}
+
+.socialbar {
+  padding: 1rem 0 3rem;
+}
+
+#work {
+  display: flex;
+  flex-flow:row wrap;
+  justify-content:center;
+  .work {
+    background: $gray;
+    color: white;
+    width: 33.33333%;
+    float: left;
+    padding: 2rem;
+    text-align: center;
+  }
+}
+
+#skills, #experience {
+  width: 50%;
+  float: left;
+  padding: 3rem;
+}
+
+footer {
+  display: block;
+  padding: 3rem;
+  clear:both;
+  p {
+    margin: 0;
+    line-height: 28px;
+    float: left;
+  }
+  .footer-social {
+    float: right;
+  }
 }
 
 @media only screen and (max-width : 1024px) {
@@ -123,6 +175,7 @@ ul#nav {
     padding: 15px;
   }
   nav {
+    background: $primary;
     display: none;
     padding-top: 20px;
   }
@@ -135,6 +188,37 @@ ul#nav {
   }
   .menu-button {
     display: inline-block;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  ul#nav {
+    li {
+      float: left;
+    }
+  }
+  #about {
+    p {
+      padding: 0 5%;
+    }
+  }
+  #work {
+    .work {
+      width: 100%
+    }
+  }
+  #skills, #experience {
+    width: 100%;
+  }
+  footer {
+    p {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    .footer-social {
+      width: 100%;
+      text-align: center;
+    }
   }
 }
 
