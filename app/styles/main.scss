@@ -67,7 +67,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  transition: background-color 0.5s ease;
+  transition: background-color 300ms ease-in-out;
   z-index: 100;
 }
 
@@ -103,8 +103,9 @@ ul#nav {
   list-style: none;
   margin: 0;
   padding: 0;
+  width: auto;
   li {
-    float: right;
+    float: left;
     padding-left: 20px;
     a {
       color: $white;
@@ -112,6 +113,9 @@ ul#nav {
       font-weight: 500;
       line-height: 33px;
       text-shadow: 2px 2px #000;
+    }
+    br {
+      display: none;
     }
   }
 }
@@ -175,11 +179,12 @@ footer {
     padding: 15px;
   }
   nav {
-    background: $primary;
     display: none;
     padding-top: 20px;
+    width: 100%;
   }
   #nav {
+    height: auto;
     li {
       display: block;
       width: 100%;
@@ -195,6 +200,13 @@ footer {
   ul#nav {
     li {
       float: left;
+      padding-bottom: 1rem;
+      a {
+        line-height: 1.3;
+      }
+      br {
+        display: inline;
+      }
     }
   }
   #about {
