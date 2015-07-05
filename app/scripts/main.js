@@ -46,7 +46,8 @@
     }
   });
 
-  $('#nav a').on('click', function(){
+  $('#nav a').on('click', function(e){
+    e.preventDefault();
     if ($(".menu-button").hasClass("is-active") === true) {
       menuButton.classList.toggle('is-active');
       $('nav').fadeOut(300);
@@ -54,6 +55,7 @@
   });
 
   $(".goto").click(function(e) {
+    e.preventDefault();
       var section = e.currentTarget.attributes[0].value
       var headerHeight = $('header').outerHeight();
       $('html, body').animate({
