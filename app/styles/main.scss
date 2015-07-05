@@ -124,7 +124,6 @@ ul#nav {
   background: url('../images/bg.jpg') center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 600px;
   width: 100%;
 }
 
@@ -177,6 +176,9 @@ footer {
 @media only screen and (max-width : 1024px) {
   h1 {
     padding: 30% 0 0;
+  }
+  .banner {
+    background-attachment: scroll;
   }
   header {
     padding: 15px;
