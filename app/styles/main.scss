@@ -37,7 +37,7 @@ h1 {
   color: $white;
   font-size: 50px;
   margin: 0;
-  padding: 235px 0 0;
+  padding: 25% 0 0;
   text-align: center;
   text-shadow: 2px 2px #000;
   -webkit-transition: all 300ms ease-in-out;
@@ -121,7 +121,7 @@ ul#nav {
 }
 
 .banner {
-  background: url('../images/bg.jpg') top center;
+  background: url('../images/bg.jpg') center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
   height: 600px;
@@ -175,6 +175,9 @@ footer {
 }
 
 @media only screen and (max-width : 1024px) {
+  h1 {
+    padding: 30% 0 0;
+  }
   header {
     padding: 15px;
   }
@@ -197,6 +200,9 @@ footer {
 }
 
 @media only screen and (max-width : 768px) {
+  h1 {
+    padding: 60% 0 0;
+  }
   ul#nav {
     li {
       float: left;
